@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-1.11.3.min.js" type="text/javascript"></script>
+        <script src="calculadora.js" type="text/javascript"></script>
+        <link href="bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="0" class="container bg-info">
+        <div id="1" class="row" >
+            <label class="col-lg-1 col-md-1 col-sm-6 col-xs-6" for="num1">Value 1: </label>
+            <input class="col-lg-1 col-md-1 col-sm-6 col-xs-6 bg-info" type="text" id="num1"/>
+            <label class="col-lg-1 col-md-1 col-sm-6 col-xs-6" for="num2">Value 2: </label>
+            <input class="col-lg-1 col-md-1 col-sm-6 col-xs-6 bg-info" type="text" id="num2"/>
+        </div>
+        <div id="2" class="row">
+            <label class="col-lg-3 col-md-3 col-sm-6 col-xs-6" for="operation">Operation: </label>
+        </div>
+        <div id="3" class="row">
+            <select id="operation" class="col-lg-2 col-md-2 col-sm-6 col-xs-6 bg-info">
+                    <option value="sum">Sum</option>
+                    <option value="subtraction">Substraction</option>
+                    <option value="division">Division</option>
+                    <option value="multiplication">Multiplication</option>
+            </select>
+            <input class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-6 col-xs-6 btn-default" type="button" id="calc" value="Calculate">
+        </div>
+        <div id="4" class="row">
+            <label class="col-lg-2 col-md-2 col-sm-6 col-xs-6" id="resultLabel">Result:</label>
+            <label class="col-lg-2 col-md-2 col-sm-6 col-xs-6" id="result"></label>
+        </div>
+        </div>
+    </body>
+</html>
